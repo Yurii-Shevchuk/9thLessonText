@@ -241,7 +241,7 @@ namespace Lesson_9_Text_And_Files
                 phoneNumber = "+" + phoneNumber;
             }
 
-            string formattedPattern = @"\+*\(\d{3}\)\d{2}-\d{3}-\d{4}";
+            string formattedPattern = @"\+{1}\(\d{3}\)\d{2}-\d{3}-\d{4}";
 
             if ((phoneNumber.Length > 13 && !Regex.IsMatch(phoneNumber, formattedPattern)) || phoneNumber.Length <13)
             {
